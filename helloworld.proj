@@ -1,0 +1,11 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="HelloWorld">
+    <Message Text="Hello World!" />
+  </Target>
+  <PropertyGroup>
+    <HelloMessage>Hello from property</HelloMessage>
+  </PropertyGroup>
+  <Target Name="HelloProperty">
+    <Message Text="$(MSBuildToolsVersion)" />
+  </Target>
+</Project>
